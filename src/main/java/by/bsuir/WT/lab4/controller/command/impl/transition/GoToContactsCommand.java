@@ -1,10 +1,10 @@
 package main.java.by.bsuir.WT.lab4.controller.command.impl.transition;
 
-import by.bsuir.wt.fourth.controller.command.Command;
-import by.bsuir.wt.fourth.controller.command.CommandResult;
-import by.bsuir.wt.fourth.controller.command.CommandResultType;
-import by.bsuir.wt.fourth.controller.context.RequestContext;
-import by.bsuir.wt.fourth.controller.context.RequestContextHelper;
+import main.java.by.bsuir.WT.lab4.controller.command.Command;
+import main.java.by.bsuir.WT.lab4.controller.command.CommandResult;
+import main.java.by.bsuir.WT.lab4.controller.command.CommandResultType;
+import main.java.by.bsuir.WT.lab4.controller.context.RequestContext;
+import main.java.by.bsuir.WT.lab4.controller.context.RequestContextHelper;
 
 import javax.servlet.http.HttpServletResponse;
 

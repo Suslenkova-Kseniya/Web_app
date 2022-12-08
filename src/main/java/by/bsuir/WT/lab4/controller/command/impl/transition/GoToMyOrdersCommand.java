@@ -1,17 +1,17 @@
 package main.java.by.bsuir.WT.lab4.controller.command.impl.transition;
 
-import by.bsuir.wt.fourth.controller.command.Command;
-import by.bsuir.wt.fourth.controller.command.CommandResult;
-import by.bsuir.wt.fourth.controller.command.CommandResultType;
-import by.bsuir.wt.fourth.controller.context.RequestContext;
-import by.bsuir.wt.fourth.controller.context.RequestContextHelper;
-import by.bsuir.wt.fourth.entity.Apartment;
-import by.bsuir.wt.fourth.entity.User;
-import by.bsuir.wt.fourth.entity.UserOrder;
-import by.bsuir.wt.fourth.exeptions.ServiceException;
-import by.bsuir.wt.fourth.service.ServiceFactory;
-import by.bsuir.wt.fourth.service.api.ApartmentService;
-import by.bsuir.wt.fourth.service.api.UserOrderService;
+import main.java.by.bsuir.WT.lab4.controller.command.Command;
+import main.java.by.bsuir.WT.lab4.controller.command.CommandResult;
+import main.java.by.bsuir.WT.lab4.controller.command.CommandResultType;
+import main.java.by.bsuir.WT.lab4.controller.context.RequestContext;
+import main.java.by.bsuir.WT.lab4.controller.context.RequestContextHelper;
+import main.java.by.bsuir.WT.lab4.entity.Apartment;
+import main.java.by.bsuir.WT.lab4.entity.User;
+import main.java.by.bsuir.WT.lab4.entity.UserOrder;
+import main.java.by.bsuir.WT.lab4.exeptions.ServiceException;
+import main.java.by.bsuir.WT.lab4.service.ServiceFactory;
+import main.java.by.bsuir.WT.lab4.service.api.ApartmentService;
+import main.java.by.bsuir.WT.lab4.service.api.UserOrderService;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
@@ -33,7 +33,7 @@ public class GoToMyOrdersCommand implements Command {
             return new CommandResult(PAGE, CommandResultType.FORWARD);
         }
         try {
-            UserOrderService userOrderService=ServiceFactory.getInstance().getUserOrderService();
+            UserOrderService userOrderService= ServiceFactory.getInstance().getUserOrderService();
             List<UserOrder> userOrders=userOrderService.retrieveUserOrderByUserId(user.getId());
             requestContext.addRequestAttribute(USER_ORDERS, userOrders);
             ApartmentService apartmentService=ServiceFactory.getInstance().getApartmentService();

@@ -1,16 +1,16 @@
 package main.java.by.bsuir.WT.lab4.controller.command.impl;
 
-import by.bsuir.wt.fourth.controller.command.Command;
-import by.bsuir.wt.fourth.controller.command.CommandResult;
-import by.bsuir.wt.fourth.controller.command.CommandResultType;
-import by.bsuir.wt.fourth.controller.context.RequestContext;
-import by.bsuir.wt.fourth.controller.context.RequestContextHelper;
-import by.bsuir.wt.fourth.entity.Role;
-import by.bsuir.wt.fourth.entity.User;
-import by.bsuir.wt.fourth.exeptions.ServiceException;
-import by.bsuir.wt.fourth.service.ServiceFactory;
-import by.bsuir.wt.fourth.service.api.RoleService;
-import by.bsuir.wt.fourth.service.api.UserService;
+import main.java.by.bsuir.WT.lab4.controller.command.Command;
+import main.java.by.bsuir.WT.lab4.controller.command.CommandResult;
+import main.java.by.bsuir.WT.lab4.controller.command.CommandResultType;
+import main.java.by.bsuir.WT.lab4.controller.context.RequestContext;
+import main.java.by.bsuir.WT.lab4.controller.context.RequestContextHelper;
+import main.java.by.bsuir.WT.lab4.entity.Role;
+import main.java.by.bsuir.WT.lab4.entity.User;
+import main.java.by.bsuir.WT.lab4.exeptions.ServiceException;
+import main.java.by.bsuir.WT.lab4.service.ServiceFactory;
+import main.java.by.bsuir.WT.lab4.service.api.RoleService;
+import main.java.by.bsuir.WT.lab4.service.api.UserService;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.Optional;

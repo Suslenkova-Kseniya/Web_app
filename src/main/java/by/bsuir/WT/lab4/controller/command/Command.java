@@ -1,6 +1,6 @@
 package main.java.by.bsuir.WT.lab4.controller.command;
 
-import by.bsuir.wt.fourth.controller.context.RequestContextHelper;
+import main.java.by.bsuir.WT.lab4.controller.context.RequestContextHelper;
 
 import javax.servlet.http.HttpServletResponse;
 

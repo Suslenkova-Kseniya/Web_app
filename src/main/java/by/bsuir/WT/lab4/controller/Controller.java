@@ -8,7 +8,6 @@ import main.java.by.bsuir.WT.lab4.dao.connection.ConnectionPool;
 import main.java.by.bsuir.WT.lab4.exeptions.ConnectionException;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.*;
 import javax.servlet.http.*;
 import java.io.IOException;
 
